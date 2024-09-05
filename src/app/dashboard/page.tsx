@@ -4,7 +4,7 @@ import { FaCheck, FaTrash } from "react-icons/fa";
 import { FiEdit2 } from "react-icons/fi";
 
 const Dashboard = () => {
-  const [selectedRows, setSelectedRows] = useState([]);
+  const [selectedRows, setSelectedRows] = useState<number[]>([]);
   const projects = [
     {
       id: 1,
@@ -64,7 +64,7 @@ const Dashboard = () => {
     },
   ];
 
-  const handleSelect = (id) => {
+  const handleSelect = (id: number) => {
     if (selectedRows.includes(id)) {
       setSelectedRows(selectedRows.filter((rowId) => rowId !== id));
     } else {

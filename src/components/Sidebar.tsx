@@ -13,22 +13,22 @@ import { SidebarContext } from "./SidebarContext";
 const sidebarItems = [
   {
     name: "Dashboard",
-    href: "/dashboard/receptionist",
+    href: "/dashboard/",
     icon: RxDashboard,
   },
   {
     name: "Task",
-    href: "/dashboard/housekeeping",
+    href: "/dashboard/",
     icon: BiTask,
   },
   {
     name: "Projects",
-    href: "/dashboard/roomlayout",
+    href: "/dashboard/",
     icon: GoProjectRoadmap,
   },
   {
     name: "Schedule",
-    href: "/dashboard/roomlayout",
+    href: "/dashboard/",
     icon: GrSchedules,
   },
 ];
