@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidebar__wrapper {
+  position: relative;
+}
+
+.sidebar {
+  width: 17rem;
+  height: 100%;
+  background-color: black;
+  padding: 1rem;
+  transition: all 0.3s linear;
+}
+
+.sidebar__top {
+  width: max-content;
+  display: flex;
+  align-content: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar__logo {
+  width: 3.4rem;
+  height: 3.5rem;
+  object-fit:cover;
+  border-radius: 1rem;
+}
+
+
+.sidebar__list {
+  list-style: none;
+}
+
+.sidebar__link {
+  display: inline-block;
+  font-size: 1rem;
+  text-decoration: none;
+  color:#6F767E ;
+  
+  padding:0.8rem;
+  display: flex;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+}
+
+
+.sidebar__icon {
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.sidebar__name {
+  margin-left: 0.5rem;
+}
+
+
+.btn {
+  position: absolute;
+  right: 1rem;
+  top: 3.7rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black; 
+  border: 1px solid black; 
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+}
+
+
+.sidebar__link.selected  {
+  /* background-color: #2457C5;  */
+  background-color: #B6F09C;
+}
+
+.sidebar__link.selected .sidebar__name  {
+  /* color: white;   */
+  color: black;
+  font-weight: bold; 
+}
+.sidebar__icon.selected {
+  /* color: white;   */
+  color: black;
+}
+
+[data-collapse ="true"]{
+  width: 5.3rem;
+}
+
+
+[data-collapse ="true"] .sidebar__name {
+  display: none;
+}
+
+
+.background {
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.btn-login {
+  background-color: #314486 !important;
+  width: 180px;
+}
